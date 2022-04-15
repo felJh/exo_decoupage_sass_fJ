@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@media screen and (min-width: 2560px) {
+  body {
+    font-size: 1.5em;
+    width: 60% !important;
+    margin: auto !important;
+    box-shadow: 0 0 4rem black;
+  }
+
+  .logo {
+    left: 40% !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 1.2em;
+    width: 80%;
+    margin: auto !important;
+    box-shadow: 0 0 4rem black;
+  }
+
+  .logo {
+    left: 10% !important;
+  }
+
+  /* FOOTER      FOOTER      FOOTER      FOOTER       */
+  footer section div a {
+    border: none;
+  }
+}
+@media screen and (max-width: 769px) {
+  /* HEADER      HEADER      HEADER      HEADER       */
+  header #newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+  }
+  header #newsletter .logo {
+    display: none;
+  }
+  header #newsletter #champs_newsletter div span {
+    display: none;
+  }
+  header nav {
+    font-size: 1.2em;
+    font-weight: 400;
+    height: 90vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+  }
+  header nav .logo {
+    order: 2;
+  }
+  header nav .logo .logo img {
+    height: 40rem;
+  }
+  header nav ul {
+    order: 1;
+    letter-spacing: 0.3em;
+    padding: 0;
+    flex-direction: column;
+    line-height: 2.4rem;
+  }
+  header nav .cowork {
+    order: 3;
+    font-weight: 100;
+  }
+
+  /* FOOTER      FOOTER      FOOTER      FOOTER       */
+  footer section div a {
+    border: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  body {
+    font-size: 0.92em;
+  }
+
+  /* HEADER      HEADER      HEADER      HEADER       */
+  header #newsletter {
+    display: none;
+  }
+  header nav {
+    height: 100vh;
+  }
+  header nav .logo img {
+    height: 6rem;
+  }
+  header nav ul li {
+    text-decoration: none !important;
+  }
+  header nav ul li:hover {
+    background-color: rgb(162, 16, 104);
+    color: bisque;
+  }
+
+  /* FOOTER      FOOTER      FOOTER      FOOTER       */
+  footer section div {
+    margin: 0 2rem;
+  }
+  footer section div span {
+    display: none;
+  }
+  footer section div i {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 321px) {
+  body {
+    font-size: 0.84em;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Lato", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+header #newsletter {
+  background-color: rgb(162, 16, 104);
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #newsletter .logo {
+  position: absolute;
+  float: left;
+  top: 0.3rem;
+  left: 0.6rem;
+}
+header #newsletter #champs_newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(245, 245, 220, 0.37);
+  font-weight: 300;
+}
+header #newsletter #champs_newsletter button {
+  background-color: rgb(67, 207, 57);
+  border: none;
+  color: beige;
+  border-radius: 0.2rem;
+  padding: 0.1rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+  padding: 0 3rem;
+  font-size: 0.6rem;
+  font-weight: 900;
+}
+header nav .logo img {
+  height: 3rem;
+  width: auto;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+header nav ul li {
+  padding: 0 1rem;
+}
+header nav ul li:nth-child(2) {
+  text-decoration: underline;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+  font-size: 0.7em;
+  text-align: left;
+}
+section h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3.4em;
+}
+section hr {
+  width: 5vw;
+  margin: 3rem auto;
+  color: rgb(191, 191, 191);
+  background-color: rgb(191, 191, 191);
+}
+section p {
+  line-height: 1.6rem;
+  text-align: justify;
+}
+section li {
+  line-height: 1.6rem;
+  list-style-type: none;
+}
+section li::before {
+  content: "";
+  display: block;
+  position: relative;
+  left: -1rem;
+  top: 1rem;
+  height: 0.3rem;
+  width: 0.3rem;
+  border-radius: 50%;
+  background-color: rgb(162, 16, 104);
+}
+section h2 {
+  font-size: 2.7em;
+  font-weight: 400;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(69, 69, 69);
+}
+footer section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+  margin: 0.4rem auto;
+}
+footer section div {
+  margin: 0 1rem;
+  font-size: 0.9em;
+}
+footer section div span {
+  display: inline-block;
+  position: relative;
+  top: 0.3rem;
+  margin: 0.5rem;
+  font-weight: 900;
+}
+footer section div a {
+  display: inline-block;
+  height: 2vw;
+  width: 2vw;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  border: 2px solid beige;
+}
+footer section div a i {
+  position: relative;
+  top: 0.3rem;
+  left: 0.4rem;
+  color: beige;
+  height: 1rem;
+  width: 1rem;
+}
+footer section div a #face {
+  position: relative;
+  top: 0.3rem;
+  left: 0.5rem;
+  color: beige;
+  height: 1rem;
+  width: 1rem;
+}
+footer img {
+  height: 4rem;
+  width: auto;
+  margin: 3rem auto 2rem;
+}
+footer p {
+  color: gray;
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=style.css.map */

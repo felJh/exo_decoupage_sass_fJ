@@ -1,0 +1,140 @@
+@import './mixins';
+@import '../fonts';
+@import '../variables';
+
+@media screen and (min-width: 2560px) {
+    body {
+        font-size: 1.5em;
+        width: 60% !important;
+        margin: auto !important;
+        box-shadow: 0 0 4rem black;
+    }
+    .logo {
+        left: 40% !important;
+    }
+}
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 1.2em;
+        width: 80%;
+        margin: auto !important;
+        box-shadow: 0 0 4rem black;
+    }
+    .logo {
+        left: 10% !important;
+    }
+
+    /* FOOTER      FOOTER      FOOTER      FOOTER       */
+    footer {
+        section {
+            div {
+                a {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 769px) {
+    /* HEADER      HEADER      HEADER      HEADER       */
+    header {
+        #newsletter {
+            @include flexCol(center, center);
+            height: auto;
+            padding: 1rem;
+            .logo {
+                display: none;
+            }
+            #champs_newsletter {
+                div span {
+                    display: none;
+                }
+            }
+        }
+        nav {
+            font-size: 1.2em;
+            font-weight: 400;
+            height: 90vh !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-around !important;
+            align-items: center !important;
+            .logo {
+                order: 2;
+
+                .logo img {
+                    height: 40rem;
+                }
+            }
+            ul{
+                order: 1;
+                letter-spacing: .3em;
+                padding: 0;
+                flex-direction: column;
+                line-height: 2.4rem;
+            }
+            .cowork {
+                order: 3;
+                font-weight: 100;
+            }
+        }
+    }
+
+    /* FOOTER      FOOTER      FOOTER      FOOTER       */
+    footer {
+        section {
+            div {
+                a {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    body {
+        font-size: .92em;
+    }
+    /* HEADER      HEADER      HEADER      HEADER       */
+    header {
+        #newsletter {
+            display: none;
+        }
+        nav {
+            .logo img {
+                height: 6rem;
+            }
+            height: 100vh;
+            ul {
+                li {
+                    text-decoration: none !important;
+                    &:hover {
+                        background-color: $purple;
+                        color: bisque;
+                    }
+                }
+            }
+        }
+    }
+
+    /* FOOTER      FOOTER      FOOTER      FOOTER       */
+    footer {
+        section {
+            div {
+                margin: 0 2rem;
+                span {
+                    display: none;
+                }
+                i {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 321px) {
+    body {
+        font-size: .84em;
+    }
+}
